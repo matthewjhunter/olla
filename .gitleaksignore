@@ -1,0 +1,20 @@
+# Reviewed gitleaks false positives, one fingerprint per line
+# (commit:file:rule:line). Each is a single historical finding; anything new
+# in the same file is still scanned.
+
+# Test fixture: a model-name token in a profile matcher test.
+037965b4f30e1105a3fbb3b6c219b5f740feb0d8:internal/adapter/registry/profile/configurable_profile_test.go:generic-api-key:309
+# Svelte table column keys.
+6a59d6f3d93102fef6fc8aac9ebf757cdf744d29:web/dashboard/src/panels/ModelsPanel.svelte:generic-api-key:34
+6a59d6f3d93102fef6fc8aac9ebf757cdf744d29:web/dashboard/src/panels/ModelsPanel.svelte:generic-api-key:35
+# Test API key for the auth integration script.
+47fca597279052d5887236479e63939282809aee:test/scripts/auth/auth-api-key.sh:generic-api-key:24
+# API docs: curl examples with a YOUR_API_KEY placeholder.
+0e93cd1dc0b5997a152d135f1eb5c2331769ef19:docs/content/api-reference/anthropic.md:curl-auth-header:617
+cac160aca12f35fae842c9ad604b73cc273675b6:docs/content/api-reference/openai.md:curl-auth-header:27
+cac160aca12f35fae842c9ad604b73cc273675b6:docs/content/api-reference/openai.md:curl-auth-header:68
+cac160aca12f35fae842c9ad604b73cc273675b6:docs/content/api-reference/openai.md:curl-auth-header:138
+cac160aca12f35fae842c9ad604b73cc273675b6:docs/content/api-reference/openai.md:curl-auth-header:172
+cac160aca12f35fae842c9ad604b73cc273675b6:docs/content/api-reference/openai.md:curl-auth-header:196
+cac160aca12f35fae842c9ad604b73cc273675b6:docs/content/api-reference/openai.md:curl-auth-header:240
+cac160aca12f35fae842c9ad604b73cc273675b6:docs/content/api-reference/openai.md:curl-auth-header:279
